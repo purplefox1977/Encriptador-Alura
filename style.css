@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario:#ffffff;
+    --color-terciario: #0A3871;
+    --color-titulo:#343A40;
+    --color-parrafo:#495057;
+    --color-botonOff:#D8DFE8;
+    --color-texarea:rgb(248, 218, 236);
+    --color-texPeque: antiquewhite;
+    --color-advertencia:hsl(72, 20%, 5%);
+
+    --fuente-Inter:"Inter", sans-serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: var(--color-secundario);
+    color:var(--color-primario);
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.logo{
+    width: 120px;
+    height: 48px;    
+    margin-left: 40px;  
+    margin-top: 40px;
+
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.advertencia{
+    width: 229px;
+    height: 18px;
+    align-items: stretch;
+ /*   display: inline-block; 
+    margin-left: 240px;
+    margin-top:640px ;/*71px  596*/
+
+}
+.advertencia_about{
+    display: inline-block;
+    width: 229px;
+    height: 18px;
+    align-items: stretch;
+ /*   margin-left: 240px;
+    margin-top:389px ;/*71px 389*/
+
+}
+
+.advertenciaImg{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+}
+.advertenciaTex{
+    display: inline-block;
+    font-size: 12px;   
+    font-weight: 400;
+    font-family: var(--fuente-Inter);
+    color: var(--color-advertencia);
+
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.botonesEncri{
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    height: 67px;
+  /*  margin-left: 240px;
+    margin-top: 25px;*/
+
+}
+.botonEncriptar{
+    width: 328px;
+    border-radius: 24px; 
+    gap: 24px;
+    text-align: center; 
+    background-color:var(--color-terciario) ;
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-family: var(--fuente-Inter);
+    font-weight: 300;
+    padding: 23.5px 0;
+
+}
+.botonDesencriptar{
+    width: 328px;
+    border-radius: 24px; 
+    text-align: center;
+    background-color:var(--color-botonOff) ;
+    color:var(--color-terciario);
+    font-size: 16px;
+    font-family: var(--fuente-Inter);
+    font-weight: 300;
+    padding: 23.5px 0;
+
+}
+.botonCopia{
+    width: 336px;
+    border-radius: 24px; 
+    gap: 112px;
+    text-align: center; 
+    background-color:var(--color-terciario) ;
+    color: var(--color-secundario);
+    font-size: 16px;
+    font-family: var(--fuente-Inter);
+    font-weight: 300;
+    padding: 23.5px 0;
+
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.textarea{
+    width: 577px;
+    height: 48px;
+    font-size: 32px;
+    font-weight: 300; 
+    font-family: var(--fuente-Inter);
+    background-color:var(--color-secundario);
+    color:var(--color-primario); 
+   /* margin-left: 240px;  
+    margin-top: -580px;/*520*/
+
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.textMensaje{
+    width: 680px;
+    height: 288px;
+    font-size: 32px;
+    font-weight: 400; 
+    font-family: var(--fuente-Inter);
+    background-color:var(--color-secundario);
+    color: var(--color-primario); 
+/*    margin-left: 240px;  
+    margin-top: -700px;/*-580*/
+    
+}
