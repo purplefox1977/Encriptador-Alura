@@ -22,7 +22,7 @@ body{
     box-sizing: border-box;
     background-color: var(--color_body);
  /*   background-image: url("img/bestias-de-la-edad-de-hielo-4.jpg"); */
-    
+   
 }
 .pantalla__main{
     display: flex;
@@ -113,6 +113,15 @@ body{
 
 }
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.seccion_copiar{
+    width: 400px;
+    height: 944PX;
+    background-color: var(--color-terciario);
+    border-radius: 32px; 
+    border: none;
+    margin-left: 80 px;/*20*/
+    margin-top: -34px;
+}
 .textMensaje{
     width:336px;
     height:781px;
@@ -123,16 +132,14 @@ body{
     background-color:var(--color-terciario);
     background-image: url("/img/Muñeco.png");
     background-repeat: no-repeat;
-     /*background-position:-300px;*/
-    color: var(--color-primario); 
-    border: none; 
-    margin-top: -20px;
+    background-position: 50px;
+    background-position-x: center;
+    border: none;
+    margin-left: 22px; /*20*/
+    margin-top: 32px;/*-20*/
+    padding-left: 20px;/**/
+    /*position: fixed;*/
    
-}
-/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
-.muneco{
-    width: 336px;
-    height: 304px;      
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .botonCopia{
@@ -145,10 +152,15 @@ body{
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
-    margin-top: 32px;    
+    margin-left: 32PX;
+    margin-top: 22px;    
 
 }
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 ::placeholder{color: blueviolet;}
-    .textarea:focus{
-        outline: none;
-    }
+.textarea:focus{
+    outline: none;/*sacamosel focus a tex area es la variacion del color cuando se posiciona el mouse*/
+}
+.textMensaje:focus{
+    outline: none;/*para que no resalte la caja cuando nos posicionamos en ella*/
+}
