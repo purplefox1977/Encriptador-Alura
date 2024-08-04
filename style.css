@@ -2,15 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --color-primario:#000000;
-    --color-secundario:#ffffff;
-    --color-terciario: #0A3871;
-    --color-titulo:#343A40;
-    --color-parrafo:#495057;
-    --color-botonOff:#D8DFE8;
-    --color-texarea:rgb(248, 218, 236);
-    --color-texPeque: antiquewhite;
-    --color-advertencia:hsl(72, 20%, 5%);
+    --color-primario:#0A3871;
+    --color-secundario:#000000;
+    --color-terciario:#ffffff ;
+    --color_body:#E5E5E5;
+    --color-cuarto:#D8DFE8;
 
     --fuente-Inter:"Inter", sans-serif;
 }
@@ -21,21 +17,19 @@
 }
 body{
    
-    background-color: var(--color-texPeque);
     color:var(--color-primario);
     height: 100vh;
     box-sizing: border-box;
-
+    background-color: var(--color_body);
+ /*   background-image: url("img/bestias-de-la-edad-de-hielo-4.jpg"); */
+    
 }
 .pantalla__main{
     display: flex;
-    align-items: center; 
-    justify-content: space-between;   
-    margin: 0%;  
-    gap: 0%;
-    background-image: url("img/bestias-de-la-edad-de-hielo-4.jpg"); 
-    width:1440px; 
-    height:936px;
+    align-items: flex-start;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    gap: 80px;
     
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -46,12 +40,6 @@ body{
     margin-top: 40px;
 
 }
-/*###########################################*/
-.seccion_derecha{
-    display: flex;
-    flex-direction: column;
-   
-}
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 .textarea{
     width: 680px;/**/
@@ -59,10 +47,12 @@ body{
     font-size: 32px;
     font-weight: 300; 
     font-family: var(--fuente-Inter);
-    background-color:var(--color-secundario);
+    text-transform: lowercase;/*trasforma el texto a minuscula*/
+    background-color:var(--color-terciario);
     color:var(--color-primario); 
+    border: none;
     margin-left: 240px;  
-    margin-top: 80px;/*520*/
+    margin-top: 80px;  /*520*/
 
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -71,8 +61,8 @@ body{
     height: 18px;
     align-items: stretch;
     margin-left: 240px;
-    margin-top:395px ;/*71px  596
-  /*  */
+    margin-top:395px ;/*71px  596*/
+
 }
 .advertenciaImg{
     width: 16px;
@@ -84,7 +74,7 @@ body{
     font-size: 12px;   
     font-weight: 400;
     font-family: var(--fuente-Inter);
-    color: var(--color-advertencia);
+    color: var(--color-primario);
 
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -93,8 +83,8 @@ body{
     justify-content: space-between;
     width: 680px;
     height: 67px;
-  margin-left: 240px;
-    /*  margin-top: 25px;*/
+    margin-left: 240px;
+    margin-top:16px; /*25px;*/
 
 }
 .botonEncriptar{
@@ -102,8 +92,8 @@ body{
     border-radius: 24px; 
     gap: 24px;
     text-align: center; 
-    background-color:var(--color-terciario) ;
-    color: var(--color-secundario);
+    background-color:var(--color-primario) ;
+    color: var(--color-terciario);
     font-size: 16px;
     font-family: var(--fuente-Inter);
     font-weight: 300;
@@ -114,19 +104,12 @@ body{
     width: 328px;
     border-radius: 24px; 
     text-align: center;
-    background-color:var(--color-botonOff) ;
-    color:var(--color-terciario);
+    background-color:var(--color-cuarto) ;
+    color:var(--color-primario);
     font-size: 16px;
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
-
-}
-/*################################################*/
-.seccion_izquierda{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 
 }
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
@@ -136,23 +119,36 @@ body{
     font-size: 24px;
     font-weight: 400; 
     font-family:var(--fuente-Inter);
-    background-color:var(--color-secundario);
-    color: var(--color-texPeque);  
-    margin-left: -72px;  
-    margin-top: -42px; 
+    text-transform: lowercase;/*trasforma el texto a minuscula*/
+    background-color:var(--color-terciario);
+    background-image: url("/img/Muñeco.png");
+    background-repeat: no-repeat;
+     /*background-position:-300px;*/
+    color: var(--color-primario); 
+    border: none; 
+    margin-top: -20px;
    
 }
-/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.muneco{
+    width: 336px;
+    height: 304px;      
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .botonCopia{
     width: 336px;
     border-radius: 24px; 
-    gap: 112px;
     text-align: center; 
-    background-color:var(--color-terciario) ;
-    color: var(--color-secundario);
+    background-color:var(--color-primario) ;
+    color: var(--color-terciario);
     font-size: 16px;
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
-    
+    margin-top: 32px;    
+
 }
+::placeholder{color: blueviolet;}
+    .textarea:focus{
+        outline: none;
+    }
