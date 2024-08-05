@@ -17,25 +17,17 @@
 }
 body{
    
-    color:var(--color-primario);
-    height: 100vh;
+    color:var(--color-primario); 
     box-sizing: border-box;
- /*   background-color: var(--color_body);*/
-    background-image: url("img/imagesRosa.jpeg"); 
+    background-color: var(--color_body);
+  /*  background-image: url("img/imagesRosa.jpeg"); 
+    height: 100vh;
+  */
    
 }
-
-.pantalla__main{
-    display: flex;
-    align-items: flex-start;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    gap: 80px;
-    padding: 3% 15%;
-    justify-content: space-between;
-    
+.header{
+    padding: 1% 0 0 1%;
 }
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .logo{
     width: 120px;
     height: 48px;    
@@ -43,16 +35,30 @@ body{
     margin-top: 40px;
 
 }
-/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
-/*.seccion_ingreso_texto{
-    width: 50%;
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.pantalla__main{
     display: flex;
-    flex-direction: column;
-   gap: 0;
-}*/
+    align-items: flex-start;  
+    padding: 3% 1%;
+    justify-content: space-between;
+    gap: 80px;
+ /*   background-color: bisque;*/
+}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+.seccion_ingreso_texto{
+    width: 680px;
+    height: 784px;
+    margin-left: 240px;
+    margin-top: 80px;
+    /*width: 60%;
+    display: flex;
+    flex-direction: column;*/
+
+}
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .textarea{
-    width: 680px;
+    width: 680px;/**/
     height: 288px;/*48*/
     font-size: 2rem;/*32px*/
     font-weight: 300; 
@@ -61,7 +67,7 @@ body{
     background-color:var(--color-terciario);
     color:var(--color-primario); 
     border: none;
-    margin-left: 80px;  
+   /* margin-left: 240px;  
     margin-top: 80px;  /*520*/
 
 }
@@ -70,7 +76,7 @@ body{
     width: 229px;
     height: 18px;
     align-items: stretch;
-    margin-left: 80px;
+   /* margin-left: 240px;*/
     margin-top:395px ;/*71px  596*/
 
 }
@@ -93,7 +99,7 @@ body{
     justify-content: space-between;
     width: 680px;
     height: 67px;
-    margin-left: 80px;
+   /* margin-left: 240px;*/
     margin-top:16px; /*25px;*/
 
 }
@@ -129,8 +135,8 @@ body{
     background-color: var(--color-terciario);
     border-radius: 32px; 
     border: none;
-    margin-left: 80 px;/*20*/
-    margin-top: -34px;
+  /*  margin-left: 80 px;20*/
+    margin-top: -48px;
 }
 .textMensaje{
     width:336px;
@@ -163,7 +169,7 @@ body{
     font-weight: 300;
     padding: 23.5px 0;
     margin-left: 32PX;
-    margin-top: 22px;    
+    margin-top: 32px;    
 
 }
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
@@ -173,4 +179,54 @@ body{
 }
 .textMensaje:focus{
     outline: none;/*para que no resalte la caja cuando nos posicionamos en ella*/
+}
+@media (max-width:768px ){
+    .header{
+        padding: 10%;
+    }
+  
+    .pantalla__main{
+       flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
+       padding: 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
+  }
+   .logo{
+      
+        margin-left: -70px;
+        margin-top:34.97px ;
+        justify-content: start;
+       
+    }
+    .seccion_ingreso_texto{
+        margin-left: 40px;
+        margin-top: 116px;
+   /*     /* width: auto;Como se tiene contenido y no sabemos que % poner se pone auto*/
+    }
+    .textarea{
+        display: flex;
+        align-items: center;
+    }*/
+    .advertencia{
+        margin-top: 308px;
+    }
+    .seccion_copiar{
+        width: 688px;
+        height: 343px;
+        border-radius: 32px; 
+        margin-left: 40px;
+        gap: 64px;
+        
+    }
+    .textMensaje{
+        width: 624px;
+        height: 180px;
+        display: flex;
+        align-content: center;
+    }
+    .botonCopia{
+        width: 624px;
+        height: 67px;
+        border-radius: 24px;
+        background-color: var(--color-terciario);
+        color:var(--color-secundario);
+    }
 }
