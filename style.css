@@ -20,16 +20,19 @@ body{
     color:var(--color-primario);
     height: 100vh;
     box-sizing: border-box;
-    background-color: var(--color_body);
- /*   background-image: url("img/bestias-de-la-edad-de-hielo-4.jpg"); */
+ /*   background-color: var(--color_body);*/
+    background-image: url("img/imagesRosa.jpeg"); 
    
 }
+
 .pantalla__main{
     display: flex;
     align-items: flex-start;
     margin-left: 0px;
     margin-bottom: 0px;
     gap: 80px;
+    padding: 3% 15%;
+    justify-content: space-between;
     
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -41,17 +44,24 @@ body{
 
 }
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*.seccion_ingreso_texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   gap: 0;
+}*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .textarea{
-    width: 680px;/**/
+    width: 680px;
     height: 288px;/*48*/
-    font-size: 32px;
+    font-size: 2rem;/*32px*/
     font-weight: 300; 
     font-family: var(--fuente-Inter);
     text-transform: lowercase;/*trasforma el texto a minuscula*/
     background-color:var(--color-terciario);
     color:var(--color-primario); 
     border: none;
-    margin-left: 240px;  
+    margin-left: 80px;  
     margin-top: 80px;  /*520*/
 
 }
@@ -60,7 +70,7 @@ body{
     width: 229px;
     height: 18px;
     align-items: stretch;
-    margin-left: 240px;
+    margin-left: 80px;
     margin-top:395px ;/*71px  596*/
 
 }
@@ -71,7 +81,7 @@ body{
 }
 .advertenciaTex{
     display: inline-block;
-    font-size: 12px;   
+    font-size: 0.75rem; /*12px*/  
     font-weight: 400;
     font-family: var(--fuente-Inter);
     color: var(--color-primario);
@@ -83,7 +93,7 @@ body{
     justify-content: space-between;
     width: 680px;
     height: 67px;
-    margin-left: 240px;
+    margin-left: 80px;
     margin-top:16px; /*25px;*/
 
 }
@@ -94,7 +104,7 @@ body{
     text-align: center; 
     background-color:var(--color-primario) ;
     color: var(--color-terciario);
-    font-size: 16px;
+    font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
@@ -106,7 +116,7 @@ body{
     text-align: center;
     background-color:var(--color-cuarto) ;
     color:var(--color-primario);
-    font-size: 16px;
+    font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
@@ -125,7 +135,7 @@ body{
 .textMensaje{
     width:336px;
     height:781px;
-    font-size: 24px;
+    font-size: 1.5rem;/*24px*/
     font-weight: 400; 
     font-family:var(--fuente-Inter);
     text-transform: lowercase;/*trasforma el texto a minuscula*/
@@ -144,11 +154,11 @@ body{
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .botonCopia{
     width: 336px;
-    border-radius: 24px; 
+    border-radius:1.5rem ; /*24px*/
     text-align: center; 
     background-color:var(--color-primario) ;
     color: var(--color-terciario);
-    font-size: 16px;
+    font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
