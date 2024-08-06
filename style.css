@@ -39,21 +39,23 @@ body{
 .pantalla__main{
     display: flex;
     align-items: flex-start;  
-    padding: 3% 1%;
+    padding: 0% 25% 0% 0%;/**/
     justify-content: space-between;
     gap: 80px;
- /*   background-color: bisque;*/
+    background-color: bisque;/* */
+    width: 1440px;
+    height: 1024px;
 }
 
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 .seccion_ingreso_texto{
-    width: 680px;
-    height: 784px;
+    width:  680px;
+    height: 784px; /* */
     margin-left: 240px;
     margin-top: 80px;
-    /*width: 60%;
+    width: 60%;
     display: flex;
-    flex-direction: column;*/
+    flex-direction: column;
 
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -135,7 +137,7 @@ body{
     background-color: var(--color-terciario);
     border-radius: 32px; 
     border: none;
-  /*  margin-left: 80 px;20*/
+    margin-left: 80 px; /*20*/
     margin-top: -48px;
 }
 .textMensaje{
@@ -180,6 +182,7 @@ body{
 .textMensaje:focus{
     outline: none;/*para que no resalte la caja cuando nos posicionamos en ella*/
 }
+/*&&&&&&&&&&&&&&&&&&&&&--MEDIA--768--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 @media (max-width:768px ){
     .header{
         padding: 10%;
@@ -187,7 +190,7 @@ body{
   
     .pantalla__main{
        flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
-       padding: 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
+       padding: 1% 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
   }
    .logo{
       
@@ -197,6 +200,7 @@ body{
        
     }
     .seccion_ingreso_texto{
+        
         margin-left: 40px;
         margin-top: 116px;
    /*     /* width: auto;Como se tiene contenido y no sabemos que % poner se pone auto*/
@@ -204,7 +208,7 @@ body{
     .textarea{
         display: flex;
         align-items: center;
-    }*/
+    }
     .advertencia{
         margin-top: 308px;
     }
@@ -228,5 +232,75 @@ body{
         border-radius: 24px;
         background-color: var(--color-terciario);
         color:var(--color-secundario);
+    }
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&--MEDIA--375--&&&&&&&&&&&&&&&&&&&&&&&*/
+@media (max-width:375px ){
+    .header{
+        padding: 10%;
+    }
+  
+    .pantalla__main{
+       flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
+       padding: 1% 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
+    }
+   .logo{
+      
+        margin-left: -60px;
+        margin-top:23px ;
+        justify-content: start;
+       
+    }
+    .seccion_ingreso_texto{
+        width: 343px;
+        height: 880px;
+        margin-left: 16px;
+        margin-top: 64px;
+  
+    }
+    .textarea{
+        width: 343px;
+        height: 624px;
+        display: flex;
+        align-items: center;
+    }
+    .advertencia{
+        margin-top: 64px;
+        
+    }
+    .botonesEncri{
+        display: flex;
+        flex-direction: column;
+        width: 343px;
+        height: 158px; 
+        gap: 24px; 
+    
+    }
+    .botonEncriptar{
+        width: 343px;     
+    }
+    .botonDesencriptar{
+        width: 343px;
+    }
+    .seccion_copiar{
+        width: 343px;
+        height: 595px;
+        border-radius: 32px; 
+        margin-left: 16px;
+        margin-top: -10px;
+
+    }
+    .textMensaje{
+        width: 279px;
+        height: 432px;
+        margin-top: 32px;
+    }
+    .botonCopia{
+        width: 279px;
+        height: 67px;
+        border-radius: 24px;
+        background-color: var(--color-terciario);
+        color:var(--color-secundario);
+        margin: 32px;
     }
 }
