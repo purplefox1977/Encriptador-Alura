@@ -10,7 +10,9 @@
     <header class="header">
         <img  class="logo" src="img/Logo.png" alt=" logo alura">
     </header>
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
     <main class="pantalla__main">
+
         <section class="seccion_ingreso_texto">
             <textarea class="textarea" cols="30" rows="10">Ingrese el texto aqui</textarea>
             <div class="advertencia">
@@ -18,24 +20,37 @@
                 <h6 class="advertenciaTex">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botonesEncri">
-                <button class="botonEncriptar">Encriptar</button>
-                <button class="botonDesencriptar">Desencriptar</button>
-            </div>
-            
+                <button class="botonEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="botonDesencriptarOff" onclick="btnDesEncriptar()">Desencriptar</button>
+            </div>     
         </section>
+   
+        <!--#############################################################################-->
+        
         <section class="seccion_copiar">
             <textarea class="textMensaje" cols="20" rows="10"></textarea>
-            <div>
-                <button class="botonCopia">Copia</button>
+            <div class="mensaje_copi" id="mensajeCopi">
+                <h4 class="recTex1">Ningún mensaje fue encontrado</h4>
+                <h5 class="recTex2">Ingresa el texto que desees encriptar o desencriptar.</h5>
             </div>
-        </section>
+            
+            <div class="boton_copia" id="btnCopi">
+                <button class="botonCopia" onclick="btnCopiar()">Copia</button>
+            </div>
+<!--function ocultar(id){
+    var elemento = document.getElementById(id);
+    elemento.style.display = "none";
+    <div class="sport-table-wager" id="grupo1">
+    <input type="submit" value="Ocultar" onclick="ocultar('grupo1')">
+</div>}-->
 
-        
+        </section>    
     </main>
 
-    <footer>
+    <script src="/script.js"></script>
 
-    </footer>
+     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <footer></footer>
 
 </body>
 </html>
