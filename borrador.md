@@ -54,18 +54,23 @@
 <li>.boton_copia</li>
 <li>.botonCopia</li>
 </ol>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<h2>Se quita el foco de las dos secciones de texto</h2>
+<li>::placeholder{color: blueviolet;}</li>
+<li>.textarea:focus</li>
+<li>.textMensaje:focus</li>
+<h2>-- Encriptador Formato Tablet--768--</h2>
+<li>@media (max-width:768px )</li>
+<h3>La responsividad en modo tableta esta compuesta:</h3>
+<ol type="a">
+<li>.pantalla__main</li>
+<li>.logo</li>
+<li>.seccion_ingreso_texto</li>
+<li>.textarea</li>
+<li>.advertencia</li>
+<li>.seccion_copiar</li>
+<li>.textMensaje</li>
+<li>.botonCopia</li>
+</ol>
 </ol>
 
 
