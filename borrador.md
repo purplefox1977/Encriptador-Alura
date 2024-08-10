@@ -71,7 +71,95 @@
 <li>.textMensaje</li>
 <li>.botonCopia</li>
 </ol>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
 </ol>
+
+.seccion_copiar{
+    margin-left: 40px;
+    
+}
+.copia{
+    width: 688px;
+    height: 343px;
+    border-radius: 32px; 
+    background-color: bisque;
+    padding: 32px;
+    margin-left: 32px;
+    margin-top: 69px;
+}
+.textMensaje{
+    width: 624px;
+    height: 180px;
+    display: flex;
+    align-content: center;  
+    background-image: none;/* */
+    
+}
+.mensaje_copi{
+    width: 624px;
+    height: 69px;
+    margin-top: 96px;
+    align-content: center;
+  /*  margin-left: 40px;
+    */
+    
+}
+.recTex1,.recTex2{
+    width: 624px;
+    height: 29px;
+   
+}
+.boton_copia{
+    width: 624px;
+    height: 67px;
+   
+}
+.botonCopia{
+    width: 624px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-terciario);
+    color:var(--color-secundario);
+   
+}
+.botonCopia{
+    width: 624px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-terciario);
+    color:var(--color-secundario);
+   
+}
+}
+
+
+
+
+
+
 
 
 /*&&&&&&&&&&&&&&&&&&&&&-- Encriptador Formato Tablet--768--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
