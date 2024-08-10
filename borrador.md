@@ -46,6 +46,7 @@
 <li>En la .seccion_copiar se define su tamaño,margeny color de fondo</li>
 
 <h2>La seccion_copiar esta compuesta de:</h2>
+/*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--&&&&&&&&&&&&&&&&&&&&*/
 .textMensaje{
     width:336px;
     height:781px;
