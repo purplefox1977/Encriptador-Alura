@@ -46,25 +46,6 @@
 <li>En la .seccion_copiar se define su tamaño,margeny color de fondo</li>
 
 <h2>La seccion_copiar esta compuesta de:</h2>
-/*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--&&&&&&&&&&&&&&&&&&&&*/
-.textMensaje{
-    width:336px;
-    height:781px;
-    font-size: 1.5rem;/*24px*/
-    font-weight: 400; 
-    font-family:var(--fuente-Inter);
-    text-transform: lowercase;/*trasforma el texto a minuscula*/
-    background-color:var(--color-terciario);
-    background-image: url("/img/Muñeco.png");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y:211px ;
-    border: none;
-    margin-left: 32px; /*20*/
-    margin-top: 32px;/*-20*/
-    /*position: fixed;*/
-    
-}
 <ol type="a">
 <li>.textMensaje(en esta seccion aparte de establecer suformato se ingresa una img)</li>
 <li>.mensaje_copi</li>
