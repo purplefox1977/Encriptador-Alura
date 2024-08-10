@@ -16,7 +16,7 @@
 <h2>En la segunda seccion vemos un textarea y dos divisiones</h2>
 <ol type="a">
 <li> En el textarea se ve el texto encriptado</li>
-<li>En laprimera div, se encuentran h4 y h5 </li>
+<li>En la primera div, se encuentran h4 y h5 </li>
 <li>En la segunda div, esta el boton copiar</li>
 </ol>
 </ol>
@@ -32,6 +32,7 @@
 <li>En pantalla_main, establesco su tamaño, el modo de acomodarse las secciones y la distancia entre secciones</li>
 <li>En la seccion_ingreso_texto, establesco distribucion de elementos,su tamaño y los margenes  de los elementos que la componen.</li>
 </ol>
+<h2>La seccion_ingreso_texto estacompuesta de:</h2>
 <ol type="a">
 <li>.textarea</li>
 <li>.advertencia</li>
@@ -41,6 +42,9 @@
 <li>.botonEncriptar</li>
 <li>.botonDesencriptar (este boton tiene un color mas oscuro cuando ahun no se activo el boton encriptar)</li>
 <li>.botonDesencriptarOff (este es el mismo que el anterior solo cambia su color al estar activado)</li>
+</ol>
+<h2>La .seccion_copiar</h2>
+<ol type="a">
 <li></li>
 <li></li>
 <li></li>
