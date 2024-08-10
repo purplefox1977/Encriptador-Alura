@@ -46,7 +46,6 @@
 <li>En la .seccion_copiar se define su tamaño,margeny color de fondo</li>
 
 <h2>La seccion_copiar esta compuesta de:</h2>
-<ol type="a">
 .textMensaje{
     width:336px;
     height:781px;
@@ -65,6 +64,7 @@
     /*position: fixed;*/
     
 }
+<ol type="a">
 <li>.textMensaje(en esta seccion aparte de establecer suformato se ingresa una img)</li>
 <li>.mensaje_copi</li>
 <li>.recTex1</li>
