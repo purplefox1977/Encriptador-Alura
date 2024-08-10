@@ -17,16 +17,15 @@
     margin: 0%;
 }
 body{
-   
-    color:var(--color-primario); 
-    box-sizing: border-box;
     background-color: var(--color_body);
     background-image: url("img/imagesRosa.jpeg"); 
+    color:var(--color-primario); 
+    box-sizing: border-box;
   /*   height: 100vh;  */
 
 }
 .header{
-    padding: 1% 0 0 1%;
+    padding: 0% 0 0 0%;
 }
 .logo{
     width:120px ;/*750%*/
@@ -39,7 +38,7 @@ body{
 .pantalla__main{
     display: flex;
     flex-direction: row;
-    padding:3% 15%; 
+    padding:0% 0%; 
     justify-content:flex-start ; 
     gap: 80px;
     width:1440px ;
@@ -52,7 +51,7 @@ body{
     flex-direction: column;
     width: 680px ;/**/
     height: 784px; /* */
-    margin-left: 80px;
+    margin-left: 240px;
     margin-top: 80px;
 
 }
