@@ -31,7 +31,7 @@
 <li>En el header secoloca el logo </li>
 <li>En pantalla_main, establesco su tamaño, el modo de acomodarse las secciones y la distancia entre secciones</li>
 <li>En la seccion_ingreso_texto, establesco distribucion de elementos,su tamaño y los margenes  de los elementos que la componen.</li>
-</ol>
+
 <h2>La seccion_ingreso_texto estacompuesta de:</h2>
 <ol type="a">
 <li>.textarea</li>
