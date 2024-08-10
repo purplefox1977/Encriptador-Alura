@@ -43,15 +43,35 @@
 <li>.botonDesencriptar (este boton tiene un color mas oscuro cuando ahun no se activo el boton encriptar)</li>
 <li>.botonDesencriptarOff (este es el mismo que el anterior solo cambia su color al estar activado)</li>
 </ol>
-<h2>La .seccion_copiar</h2>
+<li>En la .seccion_copiar se define su tamaño,margeny color de fondo</li>
+
+<h2>La seccion_copiar esta compuesta de:</h2>
 <ol type="a">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+.textMensaje{
+    width:336px;
+    height:781px;
+    font-size: 1.5rem;/*24px*/
+    font-weight: 400; 
+    font-family:var(--fuente-Inter);
+    text-transform: lowercase;/*trasforma el texto a minuscula*/
+    background-color:var(--color-terciario);
+    background-image: url("/img/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:211px ;
+    border: none;
+    margin-left: 32px; /*20*/
+    margin-top: 32px;/*-20*/
+    /*position: fixed;*/
+    
+}
+<li>.textMensaje(en esta seccion aparte de establecer suformato se ingresa una img)</li>
+<li>.mensaje_copi</li>
+<li>.recTex1</li>
+<li>.recTex2</li>
+<li>.boton_copia</li>
+<li>.botonCopia</li>
+</ol>
 <li></li>
 <li></li>
 <li></li>
