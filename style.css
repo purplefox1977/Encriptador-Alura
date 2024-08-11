@@ -49,7 +49,7 @@ body{
 .seccion_ingreso_texto{
     display: flex;
     flex-direction: column;
-    width:  50%;/*680px*/
+    width: 680px ;/*50%*/
     height: 784px; /* */
     margin-left: 240px;
     margin-top: 80px;
@@ -140,10 +140,10 @@ body{
 }
 /*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--&&&&&&&&&&&&&&&&&&&&*/
 .seccion_copiar{
-    width: 50%;
+    width:;/* 50%;*/
 }
 .copia{
-    width:400px;/**/
+    width:;/**/
     height: 944PX;
     background-color: var(--color-terciario);
     border-radius: 32px; 
@@ -241,23 +241,19 @@ h5{
 /*&&&&&&&&&&&&&&&&&&&&&-- Encriptador Formato Tablet--768--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 @media (max-width:768px ){
     .header{
-        padding: 10%;
+        padding: 0%;
     }
-  
     .pantalla__main{
        flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
        padding: 0% 0%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
        gap: 64px;
     }
    .logo{
-    
         display: inline;
-        margin-left: -10%;
-        margin-top: 74.97;
-       
+        margin-left: -1px;
+        margin-top: 74.97px;   
     }
     /*&&&&&&&&&&&&&&&&&&--Seccion Texto ingresado -- */
-
     .seccion_ingreso_texto{
         width: 688px;
         height: 697px;
@@ -279,7 +275,6 @@ h5{
 .seccion_copiar{
     margin-left: 40px;
     margin-top: 48px;
-
 }
 .copia{
     width: 688px;
@@ -287,7 +282,6 @@ h5{
     border-radius: 32px; 
     background-color: bisque;
     padding: 1px;/* */
-
 }
 .textMensaje{
     width: 624px;
@@ -295,30 +289,110 @@ h5{
     display: flex;
     align-content: center;  
     background-image: none;/* */
-
 }
 .mensaje_copi{
     width: 624px;
     height: 69px;
     margin-top: -184px;
-    align-content: center;
-    
+    align-content: center;   
 }
-
 .recTex1,.recTex2{
     width: 624px;
     height: 29px;
    margin-top: 32px;
-}
-.boton_copia{
-
 }
 .botonCopia{
     width: 624px;
     height: 67px;
     border-radius: 24px;
     background-color: var(--color-terciario);
-    color:var(--color-secundario);
+    color:var(--color-secundario);   
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&--Encriptador Formato Celular--375--&&&&&&&&&&&&&&&&&&&&&&&*/
+@media (max-width:375px ){
+    .header{
+        padding: 0%;
+    }
+}
+.pantalla__main{
+    flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
+    padding: 1% 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
+ }
+ .logo{
+    display: inline;
+    margin-left: 0%;
+    margin-top:23px ;  
+}
+/*&&&&&&&&&&&&&&&&&&--Seccion Texto ingresado -- */
+.seccion_ingreso_texto{
+    width: 343px;
+    height: 880px;
+    margin-left: 16px;
+    margin-top: 64px;
+}
+.textarea{
+    width: 343px;
+    height: 624px;
+    display: flex;
+    align-items: center;
+}
+.advertencia{
+    margin-top: 64px;   
+}
+.botonesEncri{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 158px; 
+    gap: 24px;
+}
+.botonEncriptar{
+    width: 343px;     
+}
+.botonDesencriptar{
+    width: 343px;
+}
+   /*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--*/
+.seccion_copiar{
+    margin-left: 16px;
+    margin-top: px;    
+}
+.copia{
+    width: 343px;
+    height: 595px;
+    border-radius: 32px; 
+    background-color: bisque;
+    padding: 1px;/* */
+}
+.textMensaje{
+    width: 279px;
+    height: 432px;
+    display: flex;
+    align-content: center;
+    background-image: none;
+}
+.mensaje_copi{
+    width: 263px;
+    height: 122px;
+    margin-top:-432px;
+    align-content: center;   
+    gap:16px;
+} 
+.recTex1{
+    width: 263px;
+    height: 58px;
    
+}
+.recTex2{
+    width: 263px;
+    height: 48px;
+    margin-top: 16px;
+}
+.botonCopia{
+    width: 279px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-terciario);
+    color:var(--color-secundario);   
 }
 }
