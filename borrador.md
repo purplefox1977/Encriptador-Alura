@@ -71,10 +71,12 @@
 <li>.seccion_ingreso_texto</li>
 <li>.textarea</li>
 <li>.advertencia</li>
+<li>.botonesEncri</li>
 <li>.seccion_copiar</li>
 <li>.copia</li>
 <li>.textMensaje</li>
 <li>.mensaje_copi</li>
+<li>.recTex1,.recTex2</li>
 <li>.botonCopia</li>
 </ol>
 
