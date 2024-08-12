@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --color-primario:#0A3871;
-    --color-secundario:#000000;
-    --color-terciario:#ffffff ;
+    --color-darkblue:#0a3871;
+    --color-blanco:#ffffff ;
     --color_body:#E5E5E5;
-    --color-cuarto:#D8DFE8;
-    --color-quinto:#495057;
+    --color-grisClaro:#D8DFE8;
+    --color-grisOscuro:#495057;
+    --color-rosa:#fac6cf;
 
     --fuente-Inter:"Inter", sans-serif;
 }
@@ -15,35 +15,38 @@
 *{
     padding: 0%;
     margin: 0%;
+   
 }
 body{
     background-color: var(--color_body);
-    background-image: url("img/imagesRosa.jpeg"); 
-    color:var(--color-primario); 
+    
+    background-repeat: none;
+    color:var(--color-darkblue); 
     box-sizing: border-box;
+    width:1440px ;
+    height:1024 px; /*936 /1024*/
   /*   height: 100vh;  */
-
 }
 .header{
     padding: 0% 0 0 0%;
+    background-color:var(--color-rosa);
+    width:1440px ;
 }
 .logo{
     width:120px ;/*750%*/
     height: 48px;    
     margin-left: 40px;  
     margin-top: 40px;
-
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-.pantalla__main{
+.pantalla__main{background-image: url("img/fondos-powerpoint-colores-pasteles-1.jpg"); 
     display: flex;
     flex-direction: row;
     padding:1% 1%; 
     justify-content:flex-start ; 
     gap: 80px;
-    width:1440px ;
-    height: 936px; /* 1024*/
-
+  /*  width:1440px ;
+    height:896 px; 936 /1024*/
 }
 /*&&&&&&&&&&&&&&&&&&--Seccion Texto ingresado -- &&&&&&&&&&&&&&&&&&&&&&&*/
 .seccion_ingreso_texto{
@@ -53,7 +56,6 @@ body{
     height: 784px; /* */
     margin-left: 240px;
     margin-top: 80px;
-
 }
 /*@@@@@@@@@@@@@@@@@@--Texto ingresado---@@@@@@@@@@@@@@@@@@@@@@@*/
 .textarea{
@@ -63,10 +65,9 @@ body{
     font-weight: 300; 
     font-family: var(--fuente-Inter);
     text-transform: lowercase;/*trasforma el texto a minuscula*/
-    background-color:var(--color-terciario);
-    color:var(--color-primario); 
+    background-color:var(--color-blanco);
+    color:var(--color-darkblue); 
     border: none;
-
 }
 /*@@@@@@@@@@@@@@@@@--Div Advertencia--@@@@@@@@@@@@@@@@@@@@@@@*/
 .advertencia{
@@ -74,19 +75,17 @@ body{
     height: 18px;
     align-items: stretch;
     margin-top:395px ;
-
 }
 .advertenciaImg{
     width: 16px;
     height: 16px;
-
 }
 .advertenciaTex{
     display: inline-block;
     font-size:0.75 rem; /*12px*/  
     font-weight: 400;
     font-family: var(--fuente-Inter);
-    color: var(--color-primario);
+    color: var(--color-darkblue);
    /* margin-top: 16px;*/
 }
 /*@@@@@@@@@@@@@@@@@@@--Div Botones Encriptar y desencriptar--@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -95,8 +94,7 @@ body{
     justify-content: space-between;
     width: 680px;
     height: 67px;
-    margin-top:16px;
-   
+    margin-top:16px;   
 }
 .botonEncriptar{
     width: 328px;
@@ -104,26 +102,24 @@ body{
     border-radius: 24px; 
     gap: 24px;
     text-align: center; 
-    background-color:var(--color-primario);
-    border-bottom: 2px solid var(--color-primario);
-    color: var(--color-terciario);
+    background-color:var(--color-darkblue);
+    border-bottom: 2px solid var(--color-darkblue);
+    color: var(--color-blanco);
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;   
-
 }
 .botonDesencriptar{
     width: 328px;
     padding: 23.5px 0;
     border-radius: 24px; 
     text-align: center;
-    background-color:var(--color-cuarto);
-    border-bottom: 2px solid var(--color-primario);
-    color:var(--color-primario);
+    background-color:var(--color-grisClaro);
+    border-bottom: 2px solid var(--color-darkblue);
+    color:var(--color-darkblue);
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;   
-
 }
 .botonDesencriptarOff{
     width: 328px;
@@ -131,12 +127,11 @@ body{
     border-radius: 24px; 
     text-align: center;
     background-color:var(--color_body);
-    border-bottom: 2px solid var(--color-primario);
-    color:var(--color-primario);
+    border-bottom: 2px solid var(--color-darkblue);
+    color:var(--color-darkblue);
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;   
-
 }
 /*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--&&&&&&&&&&&&&&&&&&&&*/
 .seccion_copiar{
@@ -145,15 +140,10 @@ body{
 .copia{
     width:400px;/**/
     height: 944PX;
-    background-color: var(--color-terciario);
+    background-color: var(--color-blanco);
     border-radius: 32px; 
     border: none;
-    margin-top: -48px;
-    background-color: aqua;
-   /* background-image: url(img/Rectangle\ 1.png);
-    background-repeat: no-repeat;
-    background-position-x: -27px;
-    background-position-y:0px ;*/
+    margin-top: -48px;   
 }
 .textMensaje{
     width:336px;
@@ -162,7 +152,8 @@ body{
     font-weight: 400; 
     font-family:var(--fuente-Inter);
     text-transform: lowercase;/*trasforma el texto a minuscula*/
-    background-color:var(--color-terciario);
+    color: var(--color-darkblue);
+    background-color:var(--color-blanco);
     background-image: url("/img/Muñeco.png");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -170,9 +161,7 @@ body{
     border: none;
     margin-left: 32px; /*20*/
     margin-top: 32px;/*-20*/
-    /*position: fixed;*/
-    background-color: beige;
-    
+    /*position: fixed;*/    
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .mensaje_copi{
@@ -180,25 +169,22 @@ body{
     height: 122px;
     margin-left: 32px;
     text-align: center;
-
 }
 .recTex1{
     width: 336px;  
     margin-top: -244px;/* */
-    color:var(--color-quinto);
+    color:var(--color-grisOscuro);
     font-family: var(--fuente-Inter);
     font-size:1.5rem ;/*24px*/
-    font-weight: 500; 
-    
+    font-weight: 500;     
 }
 .recTex2{
     width: 336px; 
     margin-top:16px;
-    color: var(--color-quinto);
+    color: var(--color-grisOscuro);
     font-family: var(--fuente-Inter);
     font-size: 1rem;/*16px*/
-    font-weight: 400;
-    
+    font-weight: 400;   
 }
 
 /*h4{
@@ -221,17 +207,32 @@ h5{
     width: 336px; 
     border-radius:1.5rem; /*24px*/
     text-align: center; 
-    background-color:var(--color-primario);
-    border-bottom: 2px solid var(--color-primario);
-    color: var(--color-terciario);
+    background-color:var(--color-blanco);
+    border-bottom: 2px solid var(--color-darkblue);
+    color: var(--color-darkblue);
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
     /*visibility: collapse;*/
+    visibility:hidden;
+}
+.footer{
+    background-image: url(img/textura-fondos-madera-patron-vertical-color-pastel_53876-256325.jpg);
+    font-size: 1rem;/*16px*/
+    font-family: var(--fuente-Inter);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    width:1440px ;
+}
+.lobo{
+
+    width: 80px;
+    height: 80px;    
 }
 /*&&&&&&&&&&&&&&&&&&&&&&&-- Focus de  los textarea-- &&&&&&&&&&&&&&&&&&&&&*/
-::placeholder{color: blueviolet;}
+::placeholder{color: #8a2be2;}
 .textarea:focus{
     outline: none;/*sacamosel focus a tex area es la variacion del color cuando se posiciona el mouse*/
 }
@@ -240,12 +241,17 @@ h5{
 }
 /*&&&&&&&&&&&&&&&&&&&&&-- Encriptador Formato Tablet--768--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 @media (max-width:768px ){
+    .body{
+        width:786px ;
+        height: 1260px; 
+    }
     .header{
-        padding: 0%;
+        padding: 1%;
+        width:786px ;
     }
     .pantalla__main{
        flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
-       padding: 1.5% 1.5%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
+       padding: 1% 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
        gap: 64px;
        width:786px ;
        height: 1260px; 
@@ -261,7 +267,6 @@ h5{
         height: 697px;
         margin-left: 40px;
         margin-top: 116px;
-   /*     /* width: auto;Como se tiene contenido y no sabemos que % poner se pone auto*/
     }
     .textarea{
         display: flex;
@@ -282,7 +287,6 @@ h5{
         width: 688px;
         height: 343px;
         border-radius: 32px; 
-        background-color: bisque;
         padding: 1px;/* */
     }
     .textMensaje{
@@ -307,16 +311,18 @@ h5{
         width: 624px;
         height: 67px;
         border-radius: 24px;
-        background-color: var(--color-terciario);
-        color:var(--color-secundario);   
+    }
+    .footer{
+        width:786px ;
+        padding: 1%;
     }
 }
 /*&&&&&&&&&&&&&&&&&&&&&&&&&&--Encriptador Formato Celular--375--&&&&&&&&&&&&&&&&&&&&&&&*/
 @media (max-width:375px ){
     .header{
         padding: 1%;
+        width: 375px;
     }
-
     .pantalla__main{
         flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
         padding: 1% 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
@@ -366,7 +372,6 @@ h5{
         width: 343px;
         height: 595px;
         border-radius: 32px; 
-        background-color: bisque;
         padding: 1px;/* */
     }
     .textMensaje{
@@ -400,9 +405,10 @@ h5{
     .botonCopia{
         width: 279px;
         height: 67px;
-        border-radius: 24px;
-        background-color: var(--color-terciario);
-        color:var(--color-secundario); 
-   
+        border-radius: 24px; 
+    }
+    .footer{
+        width: 375px;
+        padding: 1%;
     }
 }
