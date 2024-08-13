@@ -121,18 +121,7 @@ body{
     font-family: var(--fuente-Inter);
     font-weight: 300;   
 }
-.botonDesencriptarOff{
-    width: 328px;
-    padding: 23.5px 0;
-    border-radius: 24px; 
-    text-align: center;
-    background-color:var(--color_body);
-    border-bottom: 2px solid var(--color-darkblue);
-    color:var(--color-darkblue);
-    font-size: 1rem;/*16px*/
-    font-family: var(--fuente-Inter);
-    font-weight: 300;   
-}
+
 /*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--&&&&&&&&&&&&&&&&&&&&*/
 .seccion_copiar{
     width:50%;/* ;*/
@@ -201,7 +190,8 @@ h5{
     width: 336px;
     height: 67px;
     margin-left: 32PX;
-    margin-top:150px;/* /965/con firex 32px*/   
+    margin-top:150px;/* /965/con firex 32px*/    
+    visibility:hidden ; /* collapse */
 }
 .botonCopia{
     width: 336px; 
@@ -214,8 +204,8 @@ h5{
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
-    /*visibility: collapse;  */
-    visibility:hidden;
+   
+    
 }
 .footer{
     display: flex;
