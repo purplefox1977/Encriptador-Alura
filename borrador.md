@@ -107,6 +107,22 @@
 <li>Empezamos a hacer las funciones</li>
 <ol type="a">
 <li>funcion btnEncriptar(), declaramos variables,const</li>
+<ol type="**">
+<li>recibe la funcion encriptar,recibe la const textArea</li>
+<li>se muestra en el campo de mensaje, el textArea/ se crea el onclik enel html con el nombre de btnEncriptado</li>
+<li>se limpia el campo</li>
+<li>Se ingresa eltextopredeterminado en textarea</li>
+<li>oculta la imagen cuando aparece el texto encriptado</li>
+<li> oculta el texto cuando aparece el textEncriptado</li>
+<li>hace invisible el texto dentro de div mensaje_copi</li>
+<li>hace visible el boton copiar</li>
+<li>cambia el color del boton</li>
+
+<p>falta</p>
+<li>Desabilitar el boton desencriptar </li>
+<li>Abilitar el boton desencriptar </li>
+<li>Desabilitar el botone encriptar </li>
+</ol>
 <li>funcion encriptar()</li>
 </ol>
 <ol type="a">
