@@ -99,11 +99,27 @@
 <li>.botonCopia</li>
 </ol>
 
+
+<h1> En el script.js</h1>
+
+<ol type="I">
+<li>Lo primero que hacemos es declarar las variables glovales</li>
+<li>Empezamos a hacer las funciones</li>
+<ol type="a">
+<li>funcion btnEncriptar(), declaramos variables,const</li>
+<li>funcion encriptar()</li>
+</ol>
+<ol type="a">
 <li></li>
 <li></li>
+</ol>
+<ol type="a">
 <li></li>
 <li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+</ol>
+</ol>
+
+
+
+
+

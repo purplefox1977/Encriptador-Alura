@@ -176,7 +176,7 @@ body{
     color:var(--color-grisOscuro);
     font-family: var(--fuente-Inter);
     font-size:1.5rem ;/*24px*/
-    font-weight: 500;     
+    font-weight: 500;       
 }
 .recTex2{
     width: 336px; 
@@ -184,7 +184,7 @@ body{
     color: var(--color-grisOscuro);
     font-family: var(--fuente-Inter);
     font-size: 1rem;/*16px*/
-    font-weight: 400;   
+    font-weight: 400;       
 }
 
 /*h4{
@@ -214,20 +214,20 @@ h5{
     font-family: var(--fuente-Inter);
     font-weight: 300;
     padding: 23.5px 0;
-    /*visibility: collapse;*/
+    /*visibility: collapse;  */
     visibility:hidden;
 }
 .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1440px ;
     background-image: url(img/textura-fondos-madera-patron-vertical-color-pastel_53876-256325.jpg);
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    width:1440px ;
+    font-weight: 400;   
 }
 .lobo{
-
     width: 80px;
     height: 80px;    
 }

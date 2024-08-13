@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Cabecera de la pagina--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
     <header class="header">
         <img  class="logo" src="img/Logo.png" alt=" logo alura">
     </header>
-    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Cuerpo del programa--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
     <main class="pantalla__main">
-
+        
         <section class="seccion_ingreso_texto">
             <textarea class="textarea" cols="30" rows="10">Ingrese el texto aqui</textarea>
             <div class="advertencia">
@@ -21,40 +22,35 @@
             </div>
             <div class="botonesEncri">
                 <button class="botonEncriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="botonDesencriptarOff" onclick="btnDesEncriptar()">Desencriptar</button>
+                <button class="botonDesencriptarOff" onclick="btnDesencriptar()" id=" cambioColor">Desencriptar</button>
             </div>     
         </section>
    
-        <!--#############################################################################-->
+        <!--############################--Div de secciones--#################################################-->
         
         <section class="seccion_copiar">
             <section class="copia">
-            <textarea class="textMensaje" cols="20" rows="10"></textarea>
-            <div class="mensaje_copi" id="mensajeCopi">
-                <h4 class="recTex1">Ningún mensaje fue encontrado</h4>
-                <h5 class="recTex2">Ingresa el texto que desees encriptar o desencriptar.</h5>
-            </div>
+                <textarea class="textMensaje" cols="20" rows="10"></textarea>
+                <div class="mensaje_copi" id="mensajeCopi">
+                    <h4 class="recTex1">Ningún mensaje fue encontrado</h4>
+                    <h5 class="recTex2">Ingresa el texto que desees encriptar o desencriptar.</h5>
+                </div>
             
-            <div class="boton_copia" id="btnCopi">
-                <button class="botonCopia" onclick="btnCopiar()">Copia</button>
-            </div></section>
-<!--function ocultar(id){
-    var elemento = document.getElementById(id);
-    elemento.style.display = "none";
-    <div class="sport-table-wager" id="grupo1">
-    <input type="submit" value="Ocultar" onclick="ocultar('grupo1')">
-</div>}-->
-
+                <div class="boton_copia" id="btnCopi">
+                    <button class="botonCopia" onclick="btnCopiar()">Copia</button>
+                </div>
+            </section>
         </section>    
     </main>
-
     <script src="/script.js"></script>
 
-     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Pie de pagina--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
     <footer class="footer">
        <img class="lobo" src="img/loboGuia.png" alt="LoboPlateado">
-       <h4>Autor: loplateado1203</h5>
-    </footer>
+       <h3>Autor: loplateado1203         </h3> 
+       
+       <h3>Año: 2024</h3>  
+    </footer> 
 
 </body>
 </html>
