@@ -203,9 +203,7 @@ h5{
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 300;
-    padding: 23.5px 0;
-   
-    
+    padding: 23.5px 0;   
 }
 .footer{
     display: flex;
@@ -216,6 +214,7 @@ h5{
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 400;   
+
 }
 .lobo{
     width: 80px;
