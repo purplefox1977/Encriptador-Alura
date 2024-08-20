@@ -99,43 +99,41 @@
 <li>.botonCopia</li>
 </ol>
 
-
 <h1> En el script.js</h1>
 
 <ol type="I">
 <li>Lo primero que hacemos es declarar las variables glovales</li>
 <li>Empezamos a hacer las funciones</li>
-<ol type="a">
 <li>funcion btnEncriptar(), declaramos variables,const</li>
-<ol type="**">
-<li>recibe la funcion encriptar,recibe la const textArea</li>
-<li>se muestra en el campo de mensaje, el textArea/ se crea el onclik enel html con el nombre de btnEncriptado</li>
-<li>se limpia el campo</li>
-<li>Se ingresa eltextopredeterminado en textarea</li>
-<li>oculta la imagen cuando aparece el texto encriptado</li>
-<li> oculta el texto cuando aparece el textEncriptado</li>
-<li>hace invisible el texto dentro de div mensaje_copi</li>
-<li>hace visible el boton copiar</li>
-<li>cambia el color del boton</li>
-
+    <ol type="a">
+    <li>La funcion encriptar,recibe la const textArea</li>
+    <li>Se muestra en el campo de mensaje, el textArea/ se crea el onclik en el html con el nombre de btnEncriptado</li>
+    <li>Se limpia el campo</li>
+    <li>Se ingresa el texto predeterminado en textarea</li>
+    <li>Se oculta la imagen cuando aparece el texto encriptado</li>
+    <li>Se oculta el texto cuando aparece el textEncriptado</li>
+    <li>Hace invisible el texto dentro de div mensaje_copi</li>
+    <li>Hace visible el boton copiar</li>
+    <li>Cambia el color del boton encriptar</li>
 <p>falta</p>
-<li>Desabilitar el boton desencriptar </li>
-<li>Abilitar el boton desencriptar </li>
-<li>Desabilitar el botone encriptar </li>
+    <li>Desabilitar el boton desencriptar </li>
+    <li>Habilitar el boton desencriptar </li>
+    <li>Deshabilitar el botone encriptar </li>
+    </ol>
+<li>funcion copiar()</li>
+    <ol type="a">
+    <li>El texto de textArea aparece encriptado en el campo de textMensaje </li>
+    <li>Aparece el boton copiar en el campo textMensaje</li>
+    <li>Se selecciona el texto del campo y se presiona el boton copiar</li>
+    <li>El boton copiar realiza la accion de copiar el texto en el portapapeles  y a su ves de pegarlo en el campo textArea</li>
+    </ol>
+<li>funcion Desencriptar()</li>
+    <ol type="a">
+    <li>El texto que se encuentra encriptado, en el campo textArea</li>
+    <li>Se presiona el boton desencriptar, para modificar el texto </li>
+    <li>El texto desenciptado, se visualiza en el campo textMensaje</li>
+    </ol>
 </ol>
-<li>funcion encriptar()</li>
-</ol>
-<ol type="a">
-<li></li>
-<li></li>
-</ol>
-<ol type="a">
-<li></li>
-<li></li>
-</ol>
-</ol>
-
-
 
 
 
