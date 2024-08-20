@@ -1,7 +1,6 @@
 const textArea= document.querySelector(".textarea");// se almacenaloq el usuarioescribe
 const textMensaje= document.querySelector(".textMensaje");
 const botonCopia= document.querySelector(".boton_copia");
-const botonDesen= document.querySelector(".botonDesencriptar");
 
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
@@ -9,7 +8,8 @@ const botonDesen= document.querySelector(".botonDesencriptar");
 //La letra "o" es convertida para "ober"
 //La letra "u" es convertida para "ufat"
 
-//QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Encriptar--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 function btnEncriptar(){
     
     const textoEncriptado = encriptar(textArea.value);//recibe la funcion encriptar,recibe la const textArea
@@ -21,6 +21,7 @@ function btnEncriptar(){
     tex.style.visibility = "collapse";// hace invisible el texto dentro de div mensaje_copi
     botonCopia.style.visibility = "visible";// hace visible el boton copiar
     botonDesen.style.background = "#E5E5E5";// cambia el color del boton
+
 }
 
 function encriptar(stringEncriptado){
@@ -33,4 +34,37 @@ function encriptar(stringEncriptado){
             }
         }
     return stringEncriptado;
+}
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Desencriptar--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+function btnDesencriptar(){
+    
+    const textoEncriptado= desencriptar(textArea.value);
+    textMensaje.value =textoEncriptado; 
+    textArea.value="";
+    botonDesen.style.background = "#D8DFE8";// cambia el color del boton
+}
+
+function desencriptar(stringDesencriptado){
+    
+    let matrizCodigo = [["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];//carga de matriz
+    stringDesencriptado = stringDesencriptado.toLowerCase();//convercion a minuscula
+        for(let i = 0; i< matrizCodigo.length ;i++){//Recorre la matriz
+            if (stringDesencriptado.includes(matrizCodigo[i][1])){//verificacion de las letrasque se ingresan  
+                stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0]);
+            }
+        }
+    return stringDesencriptado;
+}
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Copiar--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+function btnCopiar(){
+
+    textArea.value="";
+    copiar();
+}
+function copiar(){
+    let copyText = document.getElementById("mensaje");//
+    copyText.querySelectorAll;
+
+    navigator.clipboard.writeText(copyText.value);
+    alert("Se copio el texto: " + copyText.value +" en la papelera")
 }
