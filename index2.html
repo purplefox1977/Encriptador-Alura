@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Cabecera de la pagina--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <header class="header">
+        <img  class="logo" src="img/Logo.png" alt=" logo alura">
+    </header>
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Cuerpo del programa--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <main class="pantalla__main">
+        
+        <section class="seccion_ingreso_texto">
+            <textarea class="textarea" id="area" cols="30" rows="10">Ingrese el texto aqui</textarea>
+            <div class="advertencia">
+                <img class="advertenciaImg" src="img/exclamation.png">
+                <h6 class="advertenciaTex">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botonesEncri" contenteditable="true">  
+                <button class="botonEncriptar" onclick="btnEncriptar()"id ="encripta" contenteditable="true">Encriptar</button>
+                <button class="botonDesencriptar" onclick="btnDesencriptar()" id=" desencripta" contenteditable="true">Desencriptar</button>
+                
+            </div>     
+        </section>
+   
+        <!--############################--Div de secciones--#################################################-->
+        
+        <section class="seccion_copiar">
+            <section class="copia">
+                <textarea class="textMensaje" cols="20" rows="10"  id="mensaje"></textarea>
+                <div class="mensaje_copi" id="mensajeCopi">
+                    <h4 class="recTex1">Ningún mensaje fue encontrado</h4>
+                    <h5 class="recTex2">Ingresa el texto que desees encriptar o desencriptar.</h5>
+                </div>
+            
+                <div class="boton_copia" id="btnCopi"contenteditable="true" >
+                    <button class="botonCopia" value="copy" onclick="btnCopiar()" id="Copi" >Copia</button>     
+                </div>
+            </section>
+        </section>    
+    </main>
+    <script src="/script2.js"></script>
+
+     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Pie de pagina--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <footer class="footer">
+       <img class="lobo" src="img/loboGuia.png" alt="LoboPlateado">
+       <h3>Autor: loplateado1203 </h3> 
+       <h3>Año: 2024</h3>  
+    </footer> 
+
+</body>
+</html>
