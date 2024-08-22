@@ -59,7 +59,7 @@ function btnCopiar(){
 
     textArea.value="";
     copiar();
-   // pegar();
+    pegar();
 
 }
 function copiar(){
@@ -68,18 +68,22 @@ function copiar(){
     copyText.querySelectorAll;
     navigator.clipboard.writeText(copyText.value);
     alert("Se copio el texto: " + copyText.value +" en la papelera");
-
-}
-function pegar(){
-
-    let pegarText = document.getElementById("textarea");//area
-    pegarText.querySelectorAll;
-    navigator.clipboard.readText(pegarText.value);
     
-    pegarText.addEventListener("paste", (event) => {
-        event.preventDefault();
-        event.clipboardData.getData("text");
-        alert(" pegado");
-     });
+}
 
-    }
+addEventListener("paste", (event) => {});
+
+onpaste = (event) => {};
+function pegar(){
+    document.addEventListener('DOMContentLoaded',function(){
+        let pasteButton = document.getElementsByTagName('button')[0];
+        pasteButton.addEventListener('click', function () {
+            navigator.clipboard
+                .readText()
+                .then(
+                    cliptext =>
+                        (document.getElementById('clipboard-paste').innerText = cliptext),
+                        err => console.log(err)
+                );
+        });
+}
