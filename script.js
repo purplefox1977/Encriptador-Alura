@@ -55,7 +55,6 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Copiar--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
     function btnCopiar(){
         textArea.value="";
     }
