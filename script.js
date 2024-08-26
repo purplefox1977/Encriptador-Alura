@@ -55,31 +55,27 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Copiar--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-function btnCopiar(){
 
-    textArea.value="";
-    copiar();
-   // pegar();
-
-}
-function copiar(){
-
-    let copyText = document.getElementById("mensaje");//
-    copyText.querySelectorAll;
-    navigator.clipboard.writeText(copyText.value);
-    alert("Se copio el texto: " + copyText.value +" en la papelera");
-
-}
-function pegar(){
-
-    let pegarText = document.getElementById("textarea");//area
-    pegarText.querySelectorAll;
-    navigator.clipboard.readText(pegarText.value);
-    
-    pegarText.addEventListener("paste", (event) => {
-        event.preventDefault();
-        event.clipboardData.getData("text");
-        alert(" pegado");
-     });
-
+    function btnCopiar(){
+        textArea.value="";
     }
+    // codigo de copiar
+    document.querySelector(".botonCopia").addEventListener("click",function copiar(){        
+        let copyText = document.getElementById("mensaje");//
+        copyText.querySelectorAll;
+        navigator.clipboard.writeText(copyText.value).then(()=>{
+            alert("se copio correctamente en portapapeles");
+        })
+        navigator.clipboard.readText().then(copyText=>{
+            document.querySelector(".textarea").value=copyText;
+        });
+    }) 
+        
+    //otra forma decopiar
+    /* function copiar(){
+        let copyText = document.getElementById("mensaje");//
+        copyText.querySelectorAll;
+        navigator.clipboard.writeText(copyText.value);
+        alert("Se copio el texto: " + copyText.value +" en la papelera");
+    }*/ 
+    

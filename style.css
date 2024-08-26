@@ -237,14 +237,14 @@ h5{
 }
 /*&&&&&&&&&&&&&&&&&&&&&-- Encriptador Formato Tablet--768--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 @media (max-width:768px ){
-    .body{
-        width:786px ;
+   /* .body{
+        width:768px ;
         height: 1260px; 
     }
     .header{
         padding: 1%;
-        width:786px ;
-    }
+        width:768px ;/*786*/
+    }*/
     .pantalla__main{
        flex-direction: column;  /*cuando se reduce la pantalla la imagen se va al final*/
        padding: 1% 1%;/* Esto no cambio casinada , en elcodigo se debe cambiar algo mas*/
@@ -372,7 +372,7 @@ h5{
     }
     .textMensaje{
         width: 279px;
-        height: 432px;
+        height: 432px;/**/
         display: flex;
         align-content: center;
         background-image: none;

@@ -372,7 +372,7 @@ h5{
     }
     .textMensaje{
         width: 279px;
-        height: 432px;
+        height: 432px;/**/
         display: flex;
         align-content: center;
         background-image: none;
