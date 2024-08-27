@@ -25,10 +25,10 @@ function btnEncriptar(){
 }
 function encriptar(stringEncriptado){
     
-    let matrizCodigo = [["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];//carga de matriz
-    stringEncriptado = stringEncriptado.toLowerCase();//convercion a minuscula 
+    let matrizCodigo = [["e","enter"],["i","imes"],["o","ober"],["a","ai"],["u","ufat"]];//carga de matriz
+    stringEncriptado = stringEncriptado.toLowerCase();//conversion a minuscula 
         for(let i = 0; i< matrizCodigo.length ;i++){//Recorre la matriz
-            if (stringEncriptado.includes (matrizCodigo[i][0])){//verificacion de las letrasque se ingresan 
+            if (stringEncriptado.includes (matrizCodigo[i][0])){//verificacion de las letras que se ingresan 
                 stringEncriptado= stringEncriptado.replaceAll(matrizCodigo[i][0],matrizCodigo[i][1]);//replaceAllcambia una cadena de caracteres por otros
             }
         }
@@ -45,7 +45,7 @@ function btnDesencriptar(){
 
 function desencriptar(stringDesencriptado){
     
-    let matrizCodigo = [["a","ai"],["e","enter"],["i","imes"],["o","ober"],["u","ufat"]];//carga de matriz
+    let matrizCodigo = [["e","enter"],["i","imes"],["o","ober"],["a","ai"],["u","ufat"]];//carga de matriz
     stringDesencriptado = stringDesencriptado.toLowerCase();//convercion a minuscula
         for(let i = 0; i< matrizCodigo.length ;i++){//Recorre la matriz
             if (stringDesencriptado.includes(matrizCodigo[i][1])){//verificacion de las letrasque se ingresan  
