@@ -15,13 +15,13 @@
     <main class="pantalla__main">
         
         <section class="seccion_ingreso_texto">
-            <textarea class="textarea" id="area" cols="30" rows="10" contenteditable="true" >Ingrese el texto aqui</textarea>
+            <textarea class="textarea" id="area" cols="30" rows="10" contenteditable="true" name="areaIngreso" >Ingrese el texto aqui</textarea>
             <div class="advertencia">
                 <img class="advertenciaImg" src="img/exclamation.png">
                 <h6 class="advertenciaTex">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botonesEncri" contenteditable="true">  
-                <button class="botonEncriptar" onclick="btnEncriptar()"id ="encripta">Encriptar</button>
+                <button  type="encri" class="botonEncriptar" onclick="btnEncriptar()"id ="encripta">Encriptar</button>
                 <button class="botonDesencriptar" onclick="btnDesencriptar()" id="desencripta">Desencriptar</button>
                 
             </div>     
@@ -29,7 +29,7 @@
    
         <!--############################--Div de secciones--#################################################-->
         <section class="copia">
-            <textarea class="textMensaje" cols="20" rows="10"  id="mensaje" contenteditable="true" ></textarea>
+            <textarea class="textMensaje" cols="20" rows="10"  id="mensaje" contenteditable="true" name="mensajeDes" ></textarea>
             <div class="mensaje_copi" id="mensajeCopi">
                 <h4 class="recTex1">Ningún mensaje fue encontrado</h4>
                 <h5 class="recTex2">Ingresa el texto que desees encriptar o desencriptar.</h5>
@@ -39,7 +39,6 @@
                 <button class="botonCopia" value="copy" onclick="btnCopiar()" id="Copi" >Copia</button>     
             </div>
         </section>
-    
     </main>
     <script src="/script.js"></script>
 
