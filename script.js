@@ -2,17 +2,21 @@ const textArea= document.querySelector(".textarea");// se almacenaloq el usuario
 const textMensaje= document.querySelector(".textMensaje");
 const botonCopia= document.querySelector(".boton_copia");
 const botonDesen= document.querySelector(".botonDesencriptar");
+const alfabeto = str => /^[a-zA-Z]{1,40]$/;//letras y espacios
 
+//const alfabeto = str => /^[a-zA-Z]*$/.test(str);
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
 //La letra "a" es convertida para "ai"
 //La letra "o" es convertida para "ober"
 //La letra "u" es convertida para "ufat"
 
-
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@--Encriptar--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
 function btnEncriptar(){
-    
+   
     const textoEncriptado = encriptar(textArea.value);//recibe la funcion encriptar,recibe la const textArea
     textMensaje.value = textoEncriptado;// se muestra en el campo de mensaje, el textArea/ se crea el onclik enel html con el nombre de btnEncriptado
     textArea.value="";// se limpia el campo

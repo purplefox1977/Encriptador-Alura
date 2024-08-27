@@ -12,12 +12,10 @@
 
     --fuente-Inter:"Inter", sans-serif;
 }
-
 *{
     padding: 0%;
     margin: 0%;   
 }
-
 body{
     background-color: var(--color_body);  
     color:var(--color-darkblue); 
@@ -46,8 +44,7 @@ body{
     flex-direction: row;
     padding:0% 0%; 
     justify-content:flex-start ; 
-    gap: 80px;
-    
+    gap: 80px;    
 }
 /*&&&&&&&&&&&&&&&&&&--Seccion Texto ingresado -- &&&&&&&&&&&&&&&&&&&&&&&*/
 .seccion_ingreso_texto{
@@ -123,21 +120,14 @@ body{
     font-family: var(--fuente-Inter);
     font-weight: 300;   
 }
-
 /*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--&&&&&&&&&&&&&&&&&&&&*/
-.seccion_copiar{
-    width:400px; /*;400px50%*/
-    height: 944px;
-    background-color: aqua;
-}
 .copia{
     width:400px;/**/
     height: 944PX;
     background-color: var(--color-blanco);
     border-radius: 32px; 
     border: none;
-    margin-top: -48px;   
-    background-color: #8a2be2;
+    margin-top: -48px;      
 }
 .textMensaje{
     width:336px;
@@ -155,16 +145,14 @@ body{
     border: none;
     margin-left: 32px; /*20*/
     margin-top: 32px;/*-20*/
-    /*position: fixed;*/    
-    background-color: chartreuse;
+    /*position: fixed;*/        
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .mensaje_copi{
     width: 336px;
     height: 122px;
     margin-left: 32px;
-    text-align: center;
-   
+    text-align: center;   
 }
 .recTex1{
     width: 336px;  
@@ -212,7 +200,6 @@ body{
     font-size: 1rem;/*16px*/
     font-family: var(--fuente-Inter);
     font-weight: 400;   
-
 }
 .lobo{
     width: 80px;
@@ -282,22 +269,18 @@ body{
         margin-left: 40px; 
         margin-top: 0px;
     }
-    
     .textMensaje{
         width: 624px;
         height: 180px;/*69*//* cambia el tamaño de ingresode texto */
         display: flex;
         align-content: center;  
-        background-image: none;/* */
-        background-color: #fac6cf;
-    
+        background-image: none;/* */ 
     }
     .mensaje_copi{
         width: 624px;
         height: 69px;
         margin-top:-180px;/*100*//* cambia posicion texto*/
-        align-content: center;  
-       
+        align-content: center;      
     }
     .recTex1{
         width: 624px;
@@ -349,6 +332,7 @@ body{
         height: 624px;
         display: flex;
         align-items: center;
+        background-color: var(--color-esfumado);
     }
     .advertencia{
         margin-top: 64px;   
@@ -367,10 +351,6 @@ body{
         width: 343px;
     }
    /*&&&&&&&&&&&&&&&&&&&&&-- Seccion Copiado--*/
-    /*.seccion_copiar{
-        margin-left: 16px;
-        margin-top: 0px;    
-    }*/
     .copia{
         width: 343px;
         height: 595px;
