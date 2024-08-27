@@ -15,7 +15,7 @@
     <main class="pantalla__main">
         
         <section class="seccion_ingreso_texto">
-            <textarea class="textarea" id="area" cols="30" rows="10" contenteditable="true" name="areaIngreso" >Ingrese el texto aqui</textarea>
+            <textarea class="textarea" id="area" cols="30" rows="10" type="text" onkeypress="return soloLetras(event)" contenteditable="true" name="areaIngreso" >Ingrese el texto aqui</textarea>
             <div class="advertencia">
                 <img class="advertenciaImg" src="img/exclamation.png">
                 <h6 class="advertenciaTex">Solo letras minúsculas y sin acentos</h6>
@@ -39,6 +39,30 @@
                 <button class="botonCopia" value="copy" onclick="btnCopiar()" id="Copi" >Copia</button>     
             </div>
         </section>
+        <script>
+            function soloLetras(e) {
+              var key = e.keyCode || e.which,
+                tecla = String.fromCharCode(key).toLowerCase(),
+                letras = " áéíóúabcdefghijklmnñopqrstuvwxyz",
+                especiales = [8, 37, 39, 46],
+                tecla_especial = false;
+          
+              for (var i in especiales) {
+                if (key == especiales[i]) {
+                  tecla_especial = true;
+                  break;
+                }
+              }
+          
+              if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+                return false;
+              }
+            }
+          </script>
+          
+          
+
+
     </main>
     <script src="/script.js"></script>
 
